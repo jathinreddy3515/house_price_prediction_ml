@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 450px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0078D4;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>House Price Predictor</h2>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="PID" placeholder="Property ID" required>
+
+        <input type="text" name="Neighborhood" placeholder="Neighborhood" required>
+
+        <input type="number" name="Year Built" placeholder="Year Built" required>
+
+        <input type="number" name="Overall Qual" placeholder="Overall Quality (1-10)" required>
+
+        <input type="text" name="Kitchen Qual" placeholder="Kitchen Quality" required>
+
+        <input type="text" name="Exter Qual" placeholder="Exterior Quality" required>
+
+        <input type="number" name="Lot Area" placeholder="Lot Area" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+</div>
+
+</body>
+</html>
+
